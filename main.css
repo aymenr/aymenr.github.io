@@ -1,9 +1,12 @@
 body {
 	font-family: "Apercu",serif;
+	margin-left:20%;
+	margin-right:20%;
 }
 
 p {
 	font-family: "Apercu Mono", Mono;
+	font-size: 0.8em
 }
 a {
 	font-weight: bold;
@@ -11,19 +14,44 @@ a {
 h1,h2 {
 	font-weight: bold 
 }
+h1 {
+	font-size: 3em
+}
 h2 {
-	font-size: 20px
+	font-size: 1.2em
 }
 .header {
 	background-color:#704a9a;
 	color:white;
+	padding-top: 2%;
+	margin-top: 25px;
 
 	}
-
+.header p {
+	font-size: 1em
+}
+.selected {
+	text-decoration: line-through;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.main {
+	margin-top:50px;
+}
 .logo {
-	width:100px;
+	width:15%;
+}
+
+.row {
+	margin-top: 25px;
 }
 
 .thumbnail {
-	width:260px;
+	width:85%;
 }
