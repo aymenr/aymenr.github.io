@@ -46,8 +46,11 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	color:white;
 }	
 
+
 .thumbnail {
-	width:200px;
+	width:250px;
+	margin-right: 5px;
+
 }
 
 .thumbnail-title {
