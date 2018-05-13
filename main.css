@@ -3,46 +3,49 @@ body {
 	margin-left:20%;
 	margin-right:20%;
 }
-.navbar {
-	padding: 0;
-}
-.navbar-expand-lg {
-	padding: 0 ;
-}
-p {
-	font-family: "Apercu Mono", Mono;
-	font-size: 0.8em
+
+
+.border {
+	border:2px solid black;
 }
 
+.border-r {
+	border:2px solid red;
+}
+
+
+p {
+	font-family: "Apercu Mono", Mono;
+	font-size: 0.8em;
+}
 a {
 	color: black;
 	font-weight: bold;
 }
-a:hover {
-	text-decoration: none;
+.navbar-light .navbar-nav .nav-link:hover {
+	
 	color:#704a9a;
 }
-.header a {
+.navbar-light .navbar-nav .nav-link {
+	color:black;
+}
+.selected, .selected:hover  {
+	text-decoration: line-through;
+}
+
+
+
+/*.header a {
 	text-decoration: underline;
 }
 .header a:hover {
 	color:white;
 }
-h1,h2 {
-	font-weight: bold 
-}
+
 .clear-right-padding {
 	padding-right:0 !important;
 }
-h1 {
-	font-size: 3em
-}
-h2 {
-	font-size: 1.8em;
-}
-h3 {
-	font-size: 1.3em
-}
+
 .thumbnail-title {
 	margin-bottom: 5px;
 }
@@ -58,9 +61,7 @@ h3 {
 .header p {
 	font-size: 1em
 }
-.selected {
-	text-decoration: line-through;
-}
+
 hr {
     display: block;
     height: 1px;
@@ -80,9 +81,7 @@ hr {
 .row {
 	margin-top: 25px;
 }
-.border {
-	border:2px solid black;
-}
+x
 .thumbnail {
 	width:220px;
 	margin-bottom: 10px;
@@ -92,4 +91,4 @@ hr {
 	width:20px;
 	margin-right: 10px;
 	height: 20px;
-}
+}*/
