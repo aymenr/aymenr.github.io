@@ -12,9 +12,9 @@
         <link rel="shortcut icon" href="favicon.ico">
         <title>Aymen Rizwan</title>
     </head>
-    <body class="border">
+    <body>
 
-        <nav class="navbar navbar-light navbar-expand-sm border-r">
+        <nav class="navbar navbar-light navbar-expand-sm px-0">
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,8 +28,8 @@
                         <a class="nav-link " href="#">photography & film </a>
                     </li>
 
-                    <li class="nav-item"> 
-                        <a class="nav-link clear-right-padding" href="#">about </a>
+                    <li class="nav-item "> 
+                        <a class="nav-link pr-0" href="#">about </a>
                     </li>
                 </ul>
             </div>
@@ -37,56 +37,60 @@
 
 
 
-        <div class ="container header">
+        <div class ="container header my-3">
             <h1>aymen rizwan</h1>
             <div class="row">
-            <div class="col-md-10">
-                <p> 
-                    I'm a graduate student at <b> Stanford's </b> Learning, Design & Technology program. I like to <b>code</b> and <b>design</b> digital products. Sometimes I also make films. <br><br>  Heres a link to my <a href="aymen.pdf"> resume </a>
-                </p>
+                <div class="col-md-10">
+                    <p> 
+                        I'm a graduate student at <b> Stanford's </b> Learning, Design & Technology program. I like to <b>code</b> and <b>design</b> digital products. Sometimes I also make films. <br><br>  Heres a link to my <a href="aymen.pdf"> resume </a>
+                    </p>
+                </div>
             </div>
         </div>
-        <!--
-        <div class="container main">
-            <h2> selected projects </h2>
-            <div class="row">
-              <div class="col-sm">
-                <a href="./wanderlust.html">
-                  <img class ="thumbnail" src ="images/wanderlust.jpg"/>
-                  <h3 class="thumbnail-title"> Wanderlust </h3>
-                  <p> design research + UX + UI +  programming </p>
-                 </a>
-                </div>
+        
+            <div class="container p-0 main">
+                <h4 class="mt-5 mb-3"> Selected Projects </h4>
+                <div class="row justify-content-between">
+                    <div class="col-md-4  border-r col-sm-6 text-center ">
+                        <a href="./wanderlust.html">
+                          <img class ="thumbnail img-fluid" src ="images/wanderlust.jpg"/>
+                          <h5 class="thumbnail-title"> Wanderlust </h5>
+                          <p class="thumbnail-subtitle"> design research + UX + UI +  programming </p>
+                        </a>
+                    </div>
 
-            <div class="col-sm">
-                <a href ="behavior-change.html">
-                  <img class ="thumbnail" src ="images/breakfast.jpg">
-                  <h3 class="thumbnail-title"> Behavior Change </h3>
-                  <p> design research + UX </p>
-                </a>
+                    <div class="col-md-4 border-r  col-sm-6 text-center">
+                        <a href ="behavior-change.html">
+                          <img class ="thumbnail img-fluid" src ="images/breakfast.jpg">
+                          <h5 class="thumbnail-title"> Behavior Change </h5>
+                          <p class="thumbnail-subtitle"> design research + UX </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 border-r  col-sm-6 text-center">
+                        <a href ="seafood-watch.html">
+                        <img class ="thumbnail img-fluid" src ="images/charagar.jpg">
+                        <h5 class="thumbnail-title"> Charagar  </h5>
+                        <p class="thumbnail-subtitle"> programming + UI </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 text-center">
+                        <a href ="seafood-watch.html">
+                        <img class ="thumbnail img-fluid" src ="images/communicaid.jpg">
+                        <h5 class="thumbnail-title"> MapGap  </h5>
+                        <p class="thumbnail-subtitle"> hackathon + UI </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 text-center">
+                        <a href ="seafood-watch.html">
+                        <img class ="thumbnail img-fluid" src ="images/seafood.jpg">
+                        <h5 class="thumbnail-title"> Seafood Watch Redesign  </h5>
+                        <p class="thumbnail-subtitle"> UX + UI </p>
+                        </a>
+                    </div>
+                </div> 
             </div>
-            <div class="col-sm-4">
-                <a href ="seafood-watch.html">
-                <img class ="thumbnail" src ="images/charagar.jpg">
-                <h3 class="thumbnail-title"> Charagar  </h3>
-                <p> programming + UI </p>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href ="seafood-watch.html">
-                <img class ="thumbnail" src ="images/communicaid.jpg">
-                <h3 class="thumbnail-title"> MapGap  </h3>
-                <p> hackathon + UI </p>
-                </a>
-            </div>
-            <div class="col-sm">
-                <a href ="seafood-watch.html">
-                <img class ="thumbnail" src ="images/seafood.jpg">
-                <h3 class="thumbnail-title"> Seafood Watch Redesign  </h3>
-                <p> UX + UI </p>
-                </a>
-            </div>
-            <div class="col-sm">
 <!--     <a href="vr-data-viz.html">
       <img class ="thumbnail" src ="images/patari.jpg">
       <h3> Data Visualization in Virtual reality </h3>
@@ -149,7 +153,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
 

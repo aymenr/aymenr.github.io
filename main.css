@@ -1,7 +1,7 @@
 body {
 	font-family: "Apercu",serif;
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:15%;
+	margin-right:15%;
 	color:black;
 }
 
@@ -41,26 +41,27 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	background-color:#704a9a;
 	color:white;
 	padding: 2%;
-	margin-top: 25px;
-	margin-bottom: 25px;
 }
 .header a:hover {
 	color:white;
 }	
 
-/*.header a {
-	text-decoration: underline;
-}
-
-
-.clear-right-padding {
-	padding-right:0 !important;
+.thumbnail {
+	width:200px;
 }
 
 .thumbnail-title {
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+
 }
 
+.thumbnail-subtitle {
+	font-size:0.9em;
+	color:#5A5A5A;
+}
+
+/*
 .header p {
 	font-size: 1em
 }
@@ -85,10 +86,7 @@ hr {
 	margin-top: 25px;
 }
 x
-.thumbnail {
-	width:220px;
-	margin-bottom: 10px;
-}
+
 
 .social-media-icon {
 	width:20px;
