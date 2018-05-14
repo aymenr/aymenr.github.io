@@ -1,5 +1,5 @@
 body {
-	font-family: "Apercu";
+	font-family: "apercuregular", Sans-Serif;
 	margin-left:15%;
 	margin-right:15%;
 	color:black;
@@ -15,7 +15,7 @@ body {
 }
 
 p {
-	font-family: "Apercu Mono", Mono;
+	font-family: "apercu_monoregular", Mono, Sans-Serif;
 }
 
 a {
@@ -64,7 +64,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	max-width:250px;
 }
 .tile-title {
-	font-family: "Apercu",serif;
+	font-family: "apercuregular",Sans-Serif;
 	margin-top: 5px;
 	margin-bottom: 2px;
 
@@ -78,7 +78,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 .main-heading {
 	font-size: 1.4em;
 	font-weight: bold;
-	font-family: "Apercu",serif !important ;
+	font-family: "apercuregular",Sans-Serif !important ;
 }
 
 #resume-link {
