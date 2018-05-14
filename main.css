@@ -17,7 +17,9 @@ body {
 p {
 	font-family: "apercu_monoregular", Mono, Sans-Serif;
 }
-
+h1,h2,h3,h4,h5,li{
+	font-weight: bold;
+}
 a {
 	color: black;
 	font-weight: bold;
