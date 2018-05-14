@@ -64,6 +64,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	max-width:250px;
 }
 .tile-title {
+	font-family: "Apercu",serif;
 	margin-top: 5px;
 	margin-bottom: 2px;
 
@@ -80,33 +81,28 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	font-family: "Apercu",serif !important ;
 }
 
-
-/*
-.header p {
-	font-size: 1em
+#resume-link {
+	color:white;
+	text-decoration: underline;
 }
 
 hr {
     display: block;
-    height: 1px;
-    border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 .logo {
-	width:15%;
+	max-width:100px;
 }
 
-.row {
-	margin-top: 25px;
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ 
 }
-x
 
 
-.social-media-icon {
-	width:20px;
-	margin-right: 10px;
-	height: 20px;
-}*/
+.relative {
+	position: relative;
+}
