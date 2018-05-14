@@ -63,7 +63,9 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	font-size:0.9em;
 	color:#5A5A5A;
 }
-
+.tile {
+	min-height: 340px;
+}
 /*
 .header p {
 	font-size: 1em
