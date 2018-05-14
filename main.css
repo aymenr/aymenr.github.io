@@ -106,12 +106,13 @@ hr {
 }
 
 .pop:hover {
-	-webkit-transform:scale(1.01);
+	-webkit-transform:scale(1.03);
 
-	-moz-transform:scale(1.01);
+	-moz-transform:scale(1.03);
 
-	-o-transform:scale(1.01);
+	-o-transform:scale(1.03);
 }
+
 
 .pop{
 	-webkit-transform:scale(1);
@@ -122,3 +123,5 @@ hr {
 	-0-transition-duration:(1);
 
 }
+
+
