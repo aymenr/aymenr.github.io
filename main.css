@@ -161,7 +161,9 @@ i {
 
 	color:#5e42a6;
 }
+
 .i-b {color:#f29549 !important}
+.i-s {color:#1A5D8A !important}
 
 .pop{
 	-webkit-transform:scale(1);
@@ -171,6 +173,13 @@ i {
 	-moz-transition-duration: (1);
 	-0-transition-duration:(1);
 
+}
+.green {
+	color:green;
+}
+
+.red {
+	color:red;
 }
 .span-title {
 	font-family: apercuregular;
