@@ -7,14 +7,14 @@ body {
 
 
 .border {
-	border:2px solid black;
+	border:5px solid black;
 }
 
 .border-r {
 	border:2px solid red;
 }
 
-p {
+p, blockquote,i{
 	font-family: "apercu_monoregular", Mono, Sans-Serif;
 }
 h1,h2,h3,h4,h5,h6, .navbar li{
@@ -60,9 +60,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	width:250px;
 	
 }
-.wanderlust p, .wanderlust li,.header-a,.header-q{
-	font-size: .9em !important;
-}
+
 .tile-text {
 	text-align: left;
 	margin-left: auto;
@@ -111,8 +109,30 @@ hr {
 	position: relative;
 }
 .wanderlust-theme {
-	background-color: #5e42a6
+	background-color: #5e42a6;
 
+}
+h5,h6 {
+	color:#333333;
+}
+.lightup-theme {
+	background-color: #4CC4DA;
+
+}
+
+.patari-theme {
+	background-color: #1abc9c
+}
+.behavior-change-theme {
+	background-color: #f29549;
+}
+
+.seafood-theme {
+	background-color: #1A5D8A;
+}
+
+.rocket-theme {
+	background-color: #3bbb2b;
 }
 .header-link {
 	color:white;
@@ -127,8 +147,19 @@ hr {
 	-o-transform:scale(1.03);
 }
 
-li {
+li,span {
 	font-family: apercu_monoregular, Mono;
+	margin-bottom: 5px;
+}
+.caption {
+	color: #333333;
+}
+.fix {
+	margin-top: 5px;
+}
+i {
+
+	color:#5e42a6;
 }
 .pop{
 	-webkit-transform:scale(1);
@@ -139,16 +170,66 @@ li {
 	-0-transition-duration:(1);
 
 }
-.header-q {
+.span-title {
 	font-family: apercuregular;
 	font-weight: bold;
+	font-size: 1.1em;
 }
-.header-a {
+.span-subtitle {
 	font-family: apercu_monoregular,Mono;
 	font-size: 1em;
 }
 
+.project-content { 
+	/*margin-right: 2em;
+	margin-left: 2em;*/
+ }
+#onboarding {
+
+	width:800px;
+
+}
+.highlight {
+	color:#704a9a ;
+	font-family: apercu_monoregular,Mono;
+	font-weight: bolder;
+}
+
+.highlight-blue {
+	color:#1A5D8A !important ;
+	font-family: apercu_monoregular,Mono;
+	font-weight: bolder;
+}
+.highlight-red {
+	color:red;
+	font-family: apercu_monoregular,Mono;
+	font-weight: bolder;
+}
+
+.highlight-green {
+	color:green !important;
+	font-family: apercu_monoregular,Mono;
+	font-weight: bolder;
+}
 .under-construction {
 	color:red;
 }
+.screenshot {
+	height:400px;
+	font-weight: black;
+}
 
+.screenshot-small {
+	height:200px;
+	font-weight: black;
+}
+th {
+		    text-align: center; 
+}
+table,th,td {
+	font-family: apercu_monoregular,Mono;
+	    border: 1px solid black;
+	    padding: 10px;
+
+    vertical-align: middle;
+}

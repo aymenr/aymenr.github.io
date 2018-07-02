@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9NNQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Aymen Rizwan</title>
+</head>
+<body class="patari">
+    <nav class="navbar navbar-light navbar-expand-sm px-0">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav"> 
+            <li class="nav-item"> 
+                <a class="nav-link pop" href="index.html">projects </a>
+            </li>
+            <li class="nav-item pop"> 
+                <a class="nav-link pr-0" href="#">about </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class ="container header patari-theme mb-4">
+	<h1> Patari Music </h1>
+	<span class="span-subtitle"> Patari is Pakistan's premiere music streaming service and was a runner up at the world startup cup in 2016.  It is a small sized startup with around 12-15 employees a
+        www.patari.pk
+	</p>
+    <span class="span-title">Timeframe:</span>
+    <span class="span-subtitle"> 1 year </span>
+    <br><br>
+    <span class="span-title"> What did I do? - </span>
+    <span class="span-subtitle"> I worked as a full stack web engineer and technical product manager at the company </span>
+     <br><br>
+   
+</div>
+
+<div class="project-content container-fluid">
+<h2> Engineering </h2>
+Patari is a MEAN (mongo express angular node) web application.
+<ul>
+    <li>
+Wrote the node.js API for several internal tools and user facing features including premium subscriptions.
+
+Implementing premium subscriptions was particularly complex because it invovled money and the services changed depneding on the country the user was in. Wrote APIs for the mobile apppplications using a combination of the playstore and appstore APIS and our own server. Also wrote several cron jobs handling cancelled subscriptions and grace periods when the user is moving locations. 
+</li>
+<li> 
+Implemented the front end for recommendation radio, search and several internal tools
+</li>
+
+
+</ul>
+
+<h2>
+    <ul>
+        <li> Spearheaded the task of implementing 100 % API test coverage across all user facing endpoints using Jasimine (https://github.com/mhevery/jasmine-node)</li>
+
+        <li>Lead code reviews and deployments for a team of 3 developers </li>
+    </ul>
+• Led the migration of analytics to Google Big Query resulting in an approximate 99.9% boost in query performance
+
+    Big Query is a data warehouse for analytics, no infrastructure to manage
+
+::Data warehouses are central repositories of integrated data and are used for analytics.::
+
+::ETL (extract, transform load) process in database usage::
+
+ Google BigQuery meets the challenges of real-time analytics by leveraging Google’s serverless infrastructure that uses automatic scaling and high-performance streaming ingestion to load data. It parallelizes execution and automatically performs performance optimizations 
+
+* High speed streaming insertion API lets you do real-time analytics
+* Replicated  + encrypted across multiple data centers (availability)
+
+
+### Problem 
+* Slow aggregation of data
+* No flexibility for queries in terms of date ranges.
+
+A cronjob would run everyday to aggregate the data first for songs, artists, and albums and then  for different time periods including day, months and quarters
+
+*A weekly aggregation for playbacks would mean:* 
+Say we have  *s* songs in the database  
+You iterate over all *d* data points for a day and for each data point you do a query through *s* songs to increment the songs counter.  The running time would be on average *O(songs * data-points)* and for a week this would be 7 times this and for a month, 30 times of this and so on. 
+
+*Actual pipeline*
+* Events dumped into a json file on the server
+* Daily job that aggregates data by song for the day and inserts them into mongo
+This means *O (songs * data-points)* for daily song aggregations
+* This data is aggregated for albums, artists and labels
+*O(albums * songs)* etc
+* This data is aggregated for weeks, months and all-time/
+For a week this means *O( 7 songs * songs)*
+
+
+* This would take hours to process on our own server which would mean we never had real time data (user recommendations, history etc)
+* Had to maintain our own server and frequent crashes bugs etc meant that we had to constantly recompute this data
+* Since we were only storing aggregations over days, weeks, months and quarters there was a limit to our query ability
+
+*If we had to do a daily aggregation for users*
+* We could store an array with key:value pairs for song and plays for each user
+* So for an aggregation it would take (*users* * *songs*)
+ 
+### Solution
+* Logs for the day are converted to a big-query agreeable format and uploaded to big query (via its command line tool)
+* Separate tables are made for logs which are regularly queried (like playbacks), this is because Big Query charges for total number of rows processed per query. Most common events are in separate tables so lesser data is processed in their query
+* Write SQL Query to get any date range/aggregation
+* These are also turned into API endpoints for our own web app for artist accounts that shows their plays
+* Created into dashboards in Google DataStudio
+
+/BigQuery is free for up to 1TB of data analyzed each month and 10GB of data stored./
+</div>
+<hr>
+<footer class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-8 px-0 d-none d-sm-block">
+           <img src ="logo.png" class="img-fluid  logo"> 
+       </div>
+       <div class="col-xs-12 col-md-4 px-0 ">
+        <p class="text-right mb-0"> aymen@stanford.edu</p>
+        <div class="text-right internet ">
+            <a href="https://www.linkedin.com/in/aymenr/">
+                <i class="fab  pop fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://vimeo.com/aymenr">
+              <i class="fab  pop fa-vimeo-square fa-2x"></i> 
+          </a>
+      </div>
+  </div>
+</div>
+</footer>
+
+<!-- </div> --> 
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<script src ="particles.js-master/particles.min.js"> </script>
+<script src ="particles.js-master/particlesconfig.js"> </script>
+</body>
+</html>

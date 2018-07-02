@@ -22,9 +22,6 @@
             <li class="nav-item"> 
                 <a class="nav-link pop" href="index.html">projects </a>
             </li>
-            <li class="nav-item"> 
-                <a class="nav-link pop" href="#">photography & film </a>
-            </li>
             <li class="nav-item pop"> 
                 <a class="nav-link pr-0" href="#">about </a>
             </li>
@@ -33,64 +30,155 @@
 </nav>
 <div class ="container header wanderlust-theme mb-4">
 	<h1> Wanderlust </h1>
-	<p> Wanderlust is an alternative navigation mobile application that encourages serendipity while ensuring that you get to your destination on time. 
-	<a class="header-link" href=" http://web.stanford.edu/class/cs194h/projects/Wanderlust/"> Project Website </a>
+	<span class="span-subtitle"> Wanderlust is an alternative navigation mobile application that encourages serendipity and exploration.
 	</p>
+    <span class="span-title">Timeframe:</span>
+    <span class="span-subtitle"> 10 weeks </span>
+    <br><br>
+    <span class="span-title"> What did I do? - </span>
+    <span class="span-subtitle"> I worked in a team of 5 developers and designers to  design the user experience and interface, conduct usability tests and code the frontend of the React Native mobile application. I updated the original project for this portfolio</span>
+    <br> <br>
+    <span class="span-title"> What did I use - </span>
+    <span class="span-subtitle"> Sketch, Principle, React Native, Adobe Photoshop</span>
+    <br> <br>
+    <a target="_blank" href="https://docs.google.com/document/d/1i6GgIZ21tADjQB6whWqdAs-RPrnu9Y3AVs60rp23z6A/edit?usp=sharing">Detailed Project Report
+    </a>
+</div>
 
- </div>
+<div class="project-content container-fluid">
 
- <div class="main">
- 		<span class="header-q">Timeframe:</span> <span class="header-a"> 10 weeks </span>
-	<br><br>
-	<span class="header-q"> What did I do? - </span>
-	<span class="header-a"> I worked in a team of 5 developers and designers to conduct design research, design thhe user experience and interface, conduct usability tests and code the frontend of the React Native mobile application.</span>
- 	<div class="video text-center mt-4 mb-4">
- 	<iframe width="600" height="330" src="https://www.youtube.com/embed/Gl3nprVhfFg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- 	</div>
- 	<h4> Introduction</h4>
- 	<p> I joined the project after it had gone through an initial 10-week design cycle. The summary:  </p>
- 	<h6> Problem </h6>
- 	<ul>
- 		<li> The fastest journey is not always the most fun or the safest </li>
- 		<li> Using traditional navigation applications doesnt allow serendipity or immersion </li>
- 	</ul>
- 	<h6> Features </h6>
- 	<ul>
- 		<li> Directions without set route</li>
- 		<li> Draw boundary to restrict wandering path  </li>
- 		<li> Filters shows areas clustered together to indicate safety,attractions, residencies etc </li>
- 		<li> Push notifications to warn user of breaching boundary</li>
+  <div class="video text-center mt-4 mb-4">
+    <iframe width="672" height="378" src="https://www.youtube.com/embed/Gl3nprVhfFg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
- 	</ul>
- </div>
-    <hr>
-    <footer class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-8 px-0 d-none d-sm-block">
-             <img src ="logo.png" class="img-fluid  logo"> 
-         </div>
-         <div class="col-xs-12 col-md-4 px-0 ">
-            <p class="text-right mb-0"> aymen@stanford.edu</p>
-            <div class="text-right internet ">
-                <a href="https://www.linkedin.com/in/aymenr/">
-                    <i class="fab  pop fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://vimeo.com/aymenr">
-                  <i class="fab  pop fa-vimeo-square fa-2x"></i> 
-              </a>
-          </div>
+<p> I joined the project after it had gone through an initial 10-week design cycle of design research and prototyping.
+</p>
+<h3> Recap </h3>
+<h5> Problem </h5>
+
+<p>
+   People need a way to find interesting places, avoid unsafe areas, and be immersed in their current environment while navigating. Because traditional maps only suggest the fastest routes, people with the aforementioned desires cannot fulfill their needs
+</p>
+
+<h5> Solution </h5>
+<p>Wanderlust is an alternative navigation application that provides users with high-level information about their surroundings and lets them wander in a boundary. It aims to facilitate immersion in the environment and worry-free exploration. </p>
+<div class="text-center mt-4 mb-4">
+    <iframe  src="https://docs.google.com/presentation/d/e/2PACX-1vQf0idZh-ld4Ri3UwrWQXfc81gI09QdBV3OpaP1L5AV8s2_gLIRgTWIhvhhozQxkAgx6itfDyIS6gVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="672" height="378" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h5> Features </h5>
+<ul>
+   <li> General directions to a destination without a set route</li>
+   <li> Draw boundary to restrict wandering path  </li>
+   <li> Unsafe areas and points of interests are clustered in groups </li>
+
+</ul>
+
+<h3>Iterating by Usability Studies</h3>
+
+
+<h5> Iteration #1</h5>
+<p>We conducted usability studies with the existing application with 3 people visiting the Stanford Campus where we asked them to explore the campus while aiming to get to a destination </p>
+
+<h6> Key Insights</h6>
+
+<ul> 
+    <li> It was difficult to communicate the idea of an alternative navigation application where users kept expecting the application to tell them which direction to take. They were also confused by the wander boundary and it's purpose <br>
+    <div class="fix">
+        <i> Fix </i> - An onboarding experience 
+    </div>
+    </li>
+    <li>The various colors used to indicate clusters points of interest was extremely confusing as user's found it hard to map colors to points of interests. The initial design hypothesized that clustering points of interests would lead to more immersion but our users were constantly confused about what was around them <br>
+    <div class="fix">
+        <i> Fix</i> - We removed the clustering of points of interests and separated each out, represented by its own icon on the map. Only unsafe areas were represented by the color red
+    </div>
+    </li>
+    <li>A lot of the confusion during our usability studies were because of dissimilarity between our application and other ones that use maps(uber/lyft/google maps). <br>
+    <div class="fix">
+        <i> Fix </i> -  We worked on a complete redesign of the applicaiton to make it consistent with standards set by other applications
+    </div>
+    </li>
+</ul>
+ <div class="text-center mt-4 mb-4">
+<iframe src="https://marvelapp.com/95ed57b?emb=1&iosapp=false&frameless=false" width="257.28" height="526.72" allowTransparency="true" frameborder="0"></iframe>
+</div>
+
+<h5> Iteration #2</h5>
+<p>We conducted another usability study after making the afformentioned fixes </p>
+
+<h6> Key Insights</h6>
+
+<ul> 
+    <li> Users were still confused about the wander boundary and we received comments such as "I don't know what boundary to draw" We realized that people, especially ones new to an area were not aware of what was around them which is why they couldn't really draw a boundary <br>
+    <div class="fix">
+        <i> Fix </i> - We still wanted to restrict the users movement so they didnt wander too far from their destination, so we came up with a walkmap to constantly give them a view of how far things were from them
+
+    </div>
+    </li>
+ <li> Users in our new study almost always found the little compass at the bottom, hard to find and were therefore confused about where to go <br>
+    <div class="fix">
+        <i> Fix </i> - We removed the compass and changed it to a bouncing arrow to guide the user
+
+    </div>
+    </li>
+</ul>
+<div class="row my-3">
+    <div class="offset-sm-3 col-sm-3 ">
+        <div class="text-center">
+            <img class="img-fluid screenshot" src ="images/wanderlust/walkmap.png">
+            <p class="caption"> walkmap </p>
+        </div>
+    </div>
+      <div class="col-sm-3 ">
+        <div class="text-center">
+            <img class="img-fluid screenshot" src ="images/wanderlust/arrow bounce.gif">
+            <p class="caption"> arrow direction guide </p>
+        </div>
+    </div>
+      
+   
+</div>
+    
+     
+        
+        
+       
+
+    <!--   <img class="img-fluid screenshot" src ="images/wanderlust/arrow bounce.gif"> -->
+       
+      
+</div>
+    
+    </div>
+
+<hr>
+<footer class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-8 px-0 d-none d-sm-block">
+         <img src ="logo.png" class="img-fluid  logo"> 
+     </div>
+     <div class="col-xs-12 col-md-4 px-0 ">
+        <p class="text-right mb-0"> aymen@stanford.edu</p>
+        <div class="text-right internet ">
+            <a href="https://www.linkedin.com/in/aymenr/">
+                <i class="fab  pop fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://vimeo.com/aymenr">
+              <i class="fab  pop fa-vimeo-square fa-2x"></i> 
+          </a>
       </div>
   </div>
+</div>
 </footer>
 
-<!-- </div> --> 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-<script src ="particles.js-master/particles.min.js"> </script>
-<script src ="particles.js-master/particlesconfig.js"> </script>
+<!-- </div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src ="particles.js-master/particles.min.js"> </script>
+    <script src ="particles.js-master/particlesconfig.js"> </script>
 </body>
 </html>
