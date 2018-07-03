@@ -14,7 +14,7 @@
 </head>
 <body class="behavior-change">
     <nav class="navbar navbar-light navbar-expand-sm px-0">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -32,39 +32,273 @@
 	<h1> Rocket </h1>
 	<span class="span-subtitle"> Rocket is a platform that helps people find apartments by connecting them with locals
 	</p>
-    <span class="span-title">Timeframe:</span>
-    <span class="span-subtitle"> 10 weeks </span>
-    <br><br>
+
     <span class="span-title"> What did I do? - </span>
     <span class="span-subtitle"> This was a project for a product management class where I worked in a team of 3 conducting design research, developing the UX and UI, creating a roadmap and developing a launch plan </span>
     <br><br>
-    <a href="https://docs.google.com/document/d/1Xw1-tkNj0pGlaJrUBmT9nRvhCJ4SP8LuijOj-Vt3GsE/edit?usp=sharing">Project Report
+    <span class="span-title">What did I use</span>
+    <span class="span-subtitle"> Invision Studio </span>
+    <br><br>
+    <a target="_blank" href="https://docs.google.com/document/d/1Xw1-tkNj0pGlaJrUBmT9nRvhCJ4SP8LuijOj-Vt3GsE/edit?usp=sharing">Detailed Project Report
     </a>
- </div>
+</div>
 
- <div class="project-content container-fluid">
+<div class="project-content container-fluid">
+    <h3> Problem Space </h3>
+    <p>We interviewed around 12 individuals mostly, current students and recent Alumni from Stanford currently seeking housing or having done so in the past.</p> 
 
- 	
+    <h5> Key Insights </h5>
+    <ul> 
 
- </div>
-    <hr>
-    <footer class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-8 px-0 d-none d-sm-block">
-             <img src ="logo.png" class="img-fluid  logo"> 
-         </div>
-         <div class="col-xs-12 col-md-4 px-0 ">
-            <p class="text-right mb-0"> aymen@stanford.edu</p>
-            <div class="text-right internet ">
-                <a href="https://www.linkedin.com/in/aymenr/">
-                    <i class="fab  pop fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://vimeo.com/aymenr">
-                  <i class="fab  pop fa-vimeo-square fa-2x"></i> 
-              </a>
-          </div>
+        <li>
+            Trust issues with sellers
+            -Despite the proliferation of property listing websites, people feel compelled to tour in person to verify the validity of the property 
+        </li>
+        <p>
+         <i class="i-r"> “I could have saved money on Craigslist but i only looked on Airbnb because there are a lot of trust issues with the latter” </i>
+     </p>
+     <p>
+         <i class="i-r"> “I always have to see the apartment since there are a lot of scams. I came across 5 of them” </i> 
+     </p>
+
+     <li>
+        Users wanted to get a sense of the neighborhood that they would be living in.
+    </li>
+    <p>
+     <i class="i-r"> “I rejected an apartment because the streets were shady, there were no street lights and there were a lot of homeless people. The area isn’t shady generally but the street definitely was” </i>
+ </p>
+ <p>
+
+     <i class="i-r"> “If i Google best neighborhoods in New York, 50 articles with different neighborhoods show up and they all target different things. I can do 6 hours of research or just visit the place” </i> 
+ </p>
+
+ <li>
+    Disparate information sources and having to navigate several different platforms
+</li>
+<p>
+ <i class="i-r"> “I actually wrote a python script that calculates the commute distance from my workplace to each potential apartmen” </i>
+</p>
+<p>
+
+ <i class="i-r"> “I had to navigate between AirBnB and Google maps, to figure out distance to the office or the closest gym” </i> 
+</p>
+
+<li>
+    Need to move quickly-
+
+    Rentals can close in under a week in NYC.  This makes it critical to seize the opportunity immediately and tour the property.  However, if you’re currently attending school, you can’t fly out to another coast to only tour one apartment.
+</li>
+<p>
+ <i class="i-r"> “The thing  with New York and San Francisco and is that you have to make a decision on the spot. Like in a few hours or you'll lose it” </i>
+
+</p>
+</ul>
+
+<p>Among these different insights we found that several of them ended up having the same effect - the need to visit the apartment and neighborhood before leasing it. </p>
+<p>
+    This was alright for a student graduating from Stanford and moving to San Francisco but in some cases we had people fly across the country, crashing on friends couches or living in hotels. When they couldn’t afford to find the time and money to travel they tried to look for a friend in the area that could help them verify it.  
+</p>
+<p>This is something that is particularly cost ineffective right now and it would provide the biggest financial incentive for users to solve.  This problem is also faced largely by fresh graduates who are tight on money and inexperienced with finding apartments </p>
+
+<h5> User Profile</h5>
+
+<p>We narrowed our user to be based not only the problem but the ones we had to access to interview and test prototypes with. </p>
+<i class="i-r">Recent college graduates from Stanford living in California, moving to the greater New York area for a full time job, who want an apartment to rent and are generally unfamiliar with the process or the city.  </i>
+
+<ul>
+    <p>We can uniquely idenitfy these users by</p>
+    <li> Inexperience with leasing apartments</li>
+    <li> Know the city they'll be moving to but not the nieghborhood</li>
+    <li> Know the city they'll be moving to but not the nieghborhood</li>
+    <li> Unfamiliar with the city they are moving to </li>
+    <li> Making atleast a year long commitement </li>
+    <li> Have jobs starting but conscious of budgets </li>
+    <li> Open to /prefer living with roommates </li>
+</ul>
+
+<h3> Design </h3>
+
+<h5> Constraints</h5>
+
+<ul>
+    <li>Since our users use desktop for their real estate searches, we are constraining ourselves to a desktop / web experience (as opposed to mobile first).
+    </li>
+
+    <li> 100% of the apartment rental search process needs to be completed online as the expectations from almost all other transactions (online services, marketplaces etc) in the users life are digital. </li>
+</ul>
+<h5> Prototypes </h5>
+<p> We were looking to develop a solution that would allow the user to lease an apartment without actually visiting it. </p>
+
+<p>We tested out two prototypes each addressing a different problem</p>
+
+<ol>
+    <li>The users want to have a sense of the neighborhood they will be living in </li>
+
+    <b> Prototype</b>
+    <ul><li>A web application that takes input from the user on their routine  and factors that they consider important in their apartment hunt (commute, public transport, groceries etc) and shows what their lives will look like</p>
+    </li>
+</ul>
+<b> Insights from testing </b>
+<ul>
+
+    <li>This prototyped on the whole helped user to quickly decide between two potential apartments but wasn’t able to paint a sufficient picture that the users didn’t need to visit the apartment</li>
+    <p>
+
+        <i class="i-r">"The prototype tells me exactly how he different options fare against each other, making the trade off between houses easier"</i>
+    </p>
+    
+</ul>
+<li>Lack of trust between the buyers and the sellers </li>
+
+<b> Prototype</b>
+<ul><li>A web application that connects users who are looking for apartments to rent with locals who are willing to verify the apartment and answer any questions for the user. </p>
+</li>
+</ul>
+<b> Insights from testing </b>
+<ul>
+
+    <li>This seemed like a promising direction as we realized that most users already did some form of this interaction through friends, if they had any in the area they were moving</li>
+    <p>
+
+        <i class="i-r">"A real person can tell you what you wouldn't know to lookup : "there's construction going on all the time on the street""</i>
+    </p>
+    <p>
+
+
+        <i class="i-r">"Users trusted individuals with similar demographics and long term residents of the the potential neighborhoods where they wished to move."</i>
+    </p>
+
+    
+</ul>
+</ol>
+<a href="https://projects.invisionapp.com/prototype/design-cjhkck9wv00ck0n01d3uh7frw"><u><h5> Final Prototype</h5></a></u>
+
+<p>We ended up with a platform that connects people looking for apartments (apartment-seekers) to finders (brokers). We plan to launch the product with a selected group of professional brokers but as we gather trust in our product we want to move on to signing up local residents as finders. </p>
+<div class="row my-3">
+    <div class="col-sm-6 ">
+        <div class="text-center">
+            <img class="img-fluid screenshot-spec" src ="images/rocket1.jpg">
+       
+        </div>
+    </div>
+    <div class="col-sm-6 ">
+        <div class="text-center">
+            <img class="img-fluid screenshot-spec" src ="images/rocket2.png">
+            
+        </div>
+    </div>
+</div>
+<div class="row my-3">
+    <div class="col-sm-6 ">
+        <div class="text-center">
+            <img class="img-fluid sceenshot-spec" src ="images/rocket3.jpg">
+
+        </div>
+    </div>
+    <div class="col-sm-6 ">
+        <div class="text-center">
+            <img class="img-fluid screenshot-spec" src ="images/rocket4.png">
+
+        </div>
+    </div>
+</div>
+<div class='text-center'>
+
+    <img class="img-fluid"  src="images/taskflow.png">
+
+    <p> Core task flow </p>
+</div>
+<h5> Competition </h5>
+<div class="text-center">
+ 
+<img class="img-fluid screenshot-large" src ="images/2x2.jpg">
+</div>
+
+
+ <table class="my-4"> 
+    <tr>
+        <th>Platform </th>
+         <th class="green">Pros </th>
+          <th class="red">Cons </th>
+
+       
+    </tr>
+    <tr>
+    <td class="text-center">
+         Real Estate Search Engines ( Craigslist, Zillow etc)
+    </td>
+   
+        <td>
+            <ul>
+            <li> Large collection</li>
+          
+        </ul>
+        </td>
+    <td>
+        <ul>
+            <li> Marred with scams</li>
+            <li> Unassisted</li>
+          
+        </ul>
+    </td>
+</tr>
+    <tr >
+        <td class="text-center" >Short term rentals (Airbnb)</td> 
+               <td>
+        <ul>
+            <li> Trust between buyer and seller</li>
+            <li> Good User experience</li>
+        
+        </ul>
+        </td>
+    <td>
+        <ul>
+            <li> Expensive for long term rentals</li>
+            <li> Trust is different for long term rentals  </li>
+            <li> Unassisted  </li>
+        </ul>
+    </td>
+    </tr>
+        <tr >
+        <td class="text-center">Offline Agents/brokers</td> 
+               <td>
+        <ul>
+            <li> Individual attention from experts</li>
+      
+        
+        </ul>
+        </td>
+    <td>
+        <ul>
+            <li> Expensive</li>
+            <li> Trust is different for long term rentals  </li>
+            <li> Clients need to take out time to tour with the broker  </li>
+            <li>Offline </li>
+        </ul>
+    </td>
+    </tr>
+ </table>
+
+ <p> You can find the docmentation for the roadmap, launch plan and economics in the <u> <a target="_blank" href="https://docs.google.com/document/d/1Xw1-tkNj0pGlaJrUBmT9nRvhCJ4SP8LuijOj-Vt3GsE/edit?usp=sharing">detailed project report</a> </u> </p>
+</div>
+<hr>
+<footer class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-8 px-0 d-none d-sm-block">
+           <img src ="logo.png" class="img-fluid  logo"> 
+       </div>
+       <div class="col-xs-12 col-md-4 px-0 ">
+        <p class="text-right mb-0"> aymen@stanford.edu</p>
+        <div class="text-right internet ">
+            <a href="https://www.linkedin.com/in/aymenr/">
+                <i class="fab  pop fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://vimeo.com/aymenr">
+              <i class="fab  pop fa-vimeo-square fa-2x"></i> 
+          </a>
       </div>
   </div>
+</div>
 </footer>
 
 <!-- </div> --> 
