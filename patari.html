@@ -30,10 +30,11 @@
 </nav>
 <div class ="container header patari-theme mb-4">
 	<h1> Patari Music </h1>
-	<span class="span-subtitle"> Patari is Pakistan's premiere music streaming service and was a runner up at the world startup cup in 2016.  It is a small sized startup with around 12-15 employees a
-        www.patari.pk
-	</p>
-    <span class="span-title">Timeframe:</span>
+	<span class="span-subtitle"> <u><a href="www.patari.pk">Patari</a> </u>is Pakistan's largest audio streaming service. It was runner up at the world startup cup in 2016.   
+
+    </span>
+    <br><br>
+    <span class="span-title">For how long?</span>
     <span class="span-subtitle"> 1 year </span>
     <br><br>
     <span class="span-title"> What did I do? - </span>
@@ -43,77 +44,34 @@
 </div>
 
 <div class="project-content container-fluid">
-<h2> Engineering </h2>
-Patari is a MEAN (mongo express angular node) web application.
+
+<p> I started working part-time at Patari soon after it's beta launch in 2015. I've worked in curating music, liasioning with artists and managing content. I joined as an full-time engineer in the summer of 2018 but in a small team my work ranged from shooting and editing videos, product strategy and designing content for social media </p>
+<h3> Engineering </h3>
+<p>Patari's web application uses the MEAN stack (mongo express angular node)</p>
 <ul>
     <li>
-Wrote the node.js API for several internal tools and user facing features including premium subscriptions.
-
-Implementing premium subscriptions was particularly complex because it invovled money and the services changed depneding on the country the user was in. Wrote APIs for the mobile apppplications using a combination of the playstore and appstore APIS and our own server. Also wrote several cron jobs handling cancelled subscriptions and grace periods when the user is moving locations. 
+I Wrote the node.js API for several internal tools and user facing features including premium subscriptions.
 </li>
 <li> 
-Implemented the front end for recommendation radio, search and several internal tools
+Implemented the front end for recommendation radio, search and several internal tools in Angular
 </li>
 
 
 </ul>
 
-<h2>
+<h3>Technical Product Management</h3>
+
+<p> After spending 6 months as an engineer I was the lead web engineer in a team of 5 developers and 3 summer interns. My work included </p>
     <ul>
-        <li> Spearheaded the task of implementing 100 % API test coverage across all user facing endpoints using Jasimine (https://github.com/mhevery/jasmine-node)</li>
+        <li>Migration of analytics to Google Big Query which resulted in an approximate 99.9% boost in query performance </li>
+        <li> The implementation of 100 % API test coverage across all user facing endpoints using <a href="https://github.com/mhevery/jasmine-node"> Jasimine </a></li>
 
-        <li>Lead code reviews and deployments for a team of 3 developers </li>
+        <li>Technical Documentation of all web services including the web application, API, internal webservice and analytics from scratch</li>
+        <li>Leading code reviews and deployments for interns  </li>
+
+       
     </ul>
-• Led the migration of analytics to Google Big Query resulting in an approximate 99.9% boost in query performance
 
-    Big Query is a data warehouse for analytics, no infrastructure to manage
-
-::Data warehouses are central repositories of integrated data and are used for analytics.::
-
-::ETL (extract, transform load) process in database usage::
-
- Google BigQuery meets the challenges of real-time analytics by leveraging Google’s serverless infrastructure that uses automatic scaling and high-performance streaming ingestion to load data. It parallelizes execution and automatically performs performance optimizations 
-
-* High speed streaming insertion API lets you do real-time analytics
-* Replicated  + encrypted across multiple data centers (availability)
-
-
-### Problem 
-* Slow aggregation of data
-* No flexibility for queries in terms of date ranges.
-
-A cronjob would run everyday to aggregate the data first for songs, artists, and albums and then  for different time periods including day, months and quarters
-
-*A weekly aggregation for playbacks would mean:* 
-Say we have  *s* songs in the database  
-You iterate over all *d* data points for a day and for each data point you do a query through *s* songs to increment the songs counter.  The running time would be on average *O(songs * data-points)* and for a week this would be 7 times this and for a month, 30 times of this and so on. 
-
-*Actual pipeline*
-* Events dumped into a json file on the server
-* Daily job that aggregates data by song for the day and inserts them into mongo
-This means *O (songs * data-points)* for daily song aggregations
-* This data is aggregated for albums, artists and labels
-*O(albums * songs)* etc
-* This data is aggregated for weeks, months and all-time/
-For a week this means *O( 7 songs * songs)*
-
-
-* This would take hours to process on our own server which would mean we never had real time data (user recommendations, history etc)
-* Had to maintain our own server and frequent crashes bugs etc meant that we had to constantly recompute this data
-* Since we were only storing aggregations over days, weeks, months and quarters there was a limit to our query ability
-
-*If we had to do a daily aggregation for users*
-* We could store an array with key:value pairs for song and plays for each user
-* So for an aggregation it would take (*users* * *songs*)
- 
-### Solution
-* Logs for the day are converted to a big-query agreeable format and uploaded to big query (via its command line tool)
-* Separate tables are made for logs which are regularly queried (like playbacks), this is because Big Query charges for total number of rows processed per query. Most common events are in separate tables so lesser data is processed in their query
-* Write SQL Query to get any date range/aggregation
-* These are also turned into API endpoints for our own web app for artist accounts that shows their plays
-* Created into dashboards in Google DataStudio
-
-/BigQuery is free for up to 1TB of data analyzed each month and 10GB of data stored./
 </div>
 <hr>
 <footer class="container">
