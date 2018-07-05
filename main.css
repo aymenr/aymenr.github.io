@@ -1,7 +1,7 @@
 body {
 	font-family: "apercuregular", Sans-Serif;
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:10%;
+	margin-right:10%;
 	color:black;
 }
 
@@ -162,7 +162,7 @@ li,span {
 .fix {
 	margin-top: 5px;
 }
-i-w {
+.i-w {
 
 	color:#5e42a6 !important;
 	font-weight: bold;
@@ -259,6 +259,9 @@ font-weight: bold}
 }
 .screenshot-xl {
 	width: 800px;
+}
+.screenshot-massive {
+	width:1000px;
 }
 .screenshot-small {
 	min-height:200px !important;
