@@ -5,8 +5,12 @@ body {
 	color:black;
 }
 
-
+.body-text {
+	margin-left: 15%;
+	margin-right: 15%;
+}
 .border {
+	width: 500px
 	border:5px solid black;
 }
 
