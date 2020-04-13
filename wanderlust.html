@@ -20,8 +20,8 @@
 <link rel="stylesheet" href="./main.css">
 <link rel="shortcut icon" href="favicon.ico">
 <title>Aymen Rizwan</title>
-</head>
-<body class="wanderlust">
+</head> 
+<body class="basheer">
   <nav class="navbar navbar-light navbar-expand-sm px-0">
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -34,168 +34,37 @@
         </ul>
   </div>
 </nav>
-<div class ="container header wanderlust-theme mb-4">
-	<h1> Wanderlust </h1>
-	<span class="span-subtitle"> Wanderlust is an alternative navigation mobile application that encourages serendipity and exploration.
-	</p>
+<div class ="container header basheer-theme mb-4">
+  <h1>Wanderlust</h1>
+  <span class="span-subtitle"> Wanderlust is an alternative navigation mobile application that encourages serendipity and exploration
+  </p>
 
 
-  <span class="span-title"> What did I do? - </span>
-  <span class="span-subtitle"> I worked in a team of 5 developers and designers to  design the user experience and interface, conduct usability tests and code the frontend of the React Native mobile application. I updated the original project for this portfolio</span>
-  <br> <br>
-  <span class="span-title"> What did I use - </span>
-  <span class="span-subtitle"> Sketch, Principle, React Native, Adobe Photoshop</span>
-  <br> <br>
-  <a class="header-link" target="_blank" href="https://docs.google.com/document/d/1i6GgIZ21tADjQB6whWqdAs-RPrnu9Y3AVs60rp23z6A/edit?usp=sharing">Detailed Project Report
-  </a>
+  <span class="span-title"> What did I do?</span>
+  <p>This was a course project that was 2 quarters long. I hopped in the second part which was primarily a 10 week design sprint in iteration through usability testing. I worked in a team of 5 developers and designers to design the user experience and interface, conduct usability tests and code the frontend of the React Native mobile application</p>
 </div>
 
 <div class="project-content container-fluid">
-   
-  <div class="embed-responsive embed-responsive-16by9 text-center mt-4 mb-4">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gl3nprVhfFg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-  <div class="body-text">
-  <p> I joined the project after it had gone through an initial 10-week design cycle of design research and prototyping.
-  </p>
-  <h3> Recap </h3>
-  <h5> Problem </h5>
-
-  <p >
-   People need a way to find interesting places, avoid unsafe areas, and be immersed in their current environment while navigating. Because traditional maps only suggest the fastest routes, people with the aforementioned desires cannot fulfill their needs
- </p>
-
- <h5> Solution </h5>
- <p>Wanderlust is an alternative navigation application that provides users with high-level information about their surroundings and lets them wander in a boundary. It aims to facilitate immersion in the environment and worry-free exploration. </p>
-</div>
- <div class="embed-responsive embed-responsive-16by9 text-center mt-4 mb-4">
-  <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vQf0idZh-ld4Ri3UwrWQXfc81gI09QdBV3OpaP1L5AV8s2_gLIRgTWIhvhhozQxkAgx6itfDyIS6gVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="672" height="378" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-<div class="body-text">
-<h5> Features </h5>
-<ul>
- <li> General directions to a destination without a set route</li>
- <li> Draw boundary to restrict wandering path  </li>
- <li> Unsafe areas and points of interests are clustered in groups </li>
-
-</ul>
-
-<h3>Iterating by Usability Studies</h3>
-
-
-<h5> Iteration #1</h5>
-<p>We conducted usability studies with the existing application with 3 people visiting the Stanford Campus where we asked them to explore the campus while aiming to get to a destination. Tasks: </p>
-
-
-<ul> 
-<li>Complete map by setting destination and boundary
-</li>
-<li>Navigate to a nearby place of interest
-</li>
-<li>Get out of boundary or enter unsafe place - We simulated, moving out of the boundary since our participants were short on time
-</li>
-
-</ul>
-
-<h6> Key Insights</h6>
-
-<ul> 
-  <li> It was difficult to communicate the idea of an alternative navigation application where users kept expecting the application to tell them which direction to take. They were also confused by the wander boundary and it's purpose <br>
-
-
-
-                <i class="i-w" >“What's the purpose of me drawing in the area?”</i>
-            
-      
-
-
-    <div class="fix">
-      <i> Fix </i> - An onboarding experience 
-    </div>
-  </li>
-  <li>The various colors used to indicate clusters points of interest was extremely confusing as user's found it hard to map colors to points of interests. The initial design hypothesized that clustering points of interests would lead to more immersion but our users were constantly confused about what was around them <br>
-    <div class="fix">
-      <i> Fix</i> - We removed the clustering of points of interests and separated each out, represented by its own icon on the map. Only unsafe areas were represented by the color red
-    </div>
-  </li>
-  <li>During navigation, points of interest could be filtered by swiping up from the bottom of the screen but not surprisingly, this interaction was completely unintuitive for our users. <br>
-    <div class="fix">
-      <i> Fix</i> - We made the points of interest collapsible in a filter button that always remained on the screen.
-    </div>
-    </div>
-    <div class="text-center mt-3">
-    <img class="img-fluid screenshot" src="images/wanderlust/filter-icon-animation.gif">
-    <p class="caption"> Collapsible filter button </p>
-  </div>
-  </li>
-  <div class="body-text">
-  <li>A lot of the confusion during our usability studies were because of dissimilarity between our application and other ones that use maps(uber/lyft/google maps). <br>
-    <div class="fix">
-      <i> Fix </i> -  We worked on a complete redesign of the applicaiton to make it consistent with standards set by other applications
-    </div>
-    </div>
-  </li>
-
-</ul>
-
-<h3> New Tasks </h3>
-
-<div class="text-center">
-<img class="screenshot-massive img-fluid" src="images/wanderlust/task1a.png">
-
-</div>
-<div class="text-center">
-<img class="screenshot-massive img-fluid" src="images/wanderlust/task2a.png">
-
-</div>
-<div class="text-center">
-<img class="screenshot-massive img-fluid" src="images/wanderlust/task3a.png">
-
-</div>
-<div class="text-center mt-4 mb-4">
-  <iframe src="https://marvelapp.com/95ed57b?emb=1&iosapp=false&frameless=false" width="257.28" height="526.72" allowTransparency="true" frameborder="0"></iframe>
-</div>
-<div class="body-text">
-<h5> Iteration #2</h5>
-<p>We conducted another usability study after making the afformentioned fixes </p>
-
-<h6> Key Insights</h6>
-
-<ul> 
-  <li> Users were still confused about the wander boundary and we received comments such as "I don't know what boundary to draw" We realized that people, especially ones new to an area were not aware of what was around them which is why they couldn't really draw a boundary <br>
-    <div class="fix">
-      <i> Fix </i> - We still wanted to restrict the users movement so they didnt wander too far from their destination, so we came up with a walkmap to constantly give them a view of how far things were from them
-
-    </div>
-  </li>
-  <li> Users in our new study almost always found the little compass at the bottom, hard to find and were therefore confused about where to go <br>
-    <div class="fix">
-      <i> Fix </i> - We removed the compass and changed it to a bouncing arrow to guide the user
-    </div>
-    </div>
-  </li>
-</ul> 
-<div class="row">
-  <div class="col-sm-12 col-md-6 offset-lg-2 col-lg-4 text-center">
-    <img class="img-fluid screenshot " src="images/wanderlust/walkmap.png">
-    <p> walkmap </p>
-  </div>
-  <div class="col-sm-12 col-lg-4 col-md-6 text-center">
-    <img class="img-fluid screenshot" src="images/wanderlust/arrow bounce.gif">   
-    <p> bouncing arrow guiding user to destination </p>
-  </div>
+<h1> Project Video </h1>
+<div>
+  <div class="embed-responsive embed-responsive-16by9">
+   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gl3nprVhfFg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
+<h1 class="mt-5"> Case Study </h1>
+
+<div class="text-center embed-responsive embed-responsive-21by9">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQhEiOvhzeaxKO6CQFyrUDWNzJ0Pi01W1pCAh10GLO3RjtfaW11iSAd6Fb75RbLn3Hqs50YP5ajDGdz/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+</div>
+</div>  
 
 <div class="text-center mt-5">
-<p class="text-center"> other projects </p>
-
-<a class="other-projects"  href="basheer.html">Basheer</a>&nbsp; &nbsp;
+<h3>More projects</h3>
+<a class="other-projects" href="basheer.html">Basheer</a>  &nbsp; &nbsp;
+<a class="other-projects" href="sabaq.html">SABAQ</a>  &nbsp; &nbsp;
+<a class="other-projects"  href="paitoo.html">Paitoo</a>&nbsp; &nbsp;
 <a class="other-projects" href="behavior-change.html">Behavior Change</a>  &nbsp; &nbsp;
-<a class="other-projects"  href="seafood-watch.html">Seafood Watch Redesign</a>&nbsp; &nbsp;
-<a class="other-projects"  href="rocket.html">Rocket</a>&nbsp; &nbsp;
-<a class="other-projects"  href="patari.html">Patari</a>&nbsp; &nbsp;
-<a class="other-projects"  href="lightup.html">Lightup</a>
 </div>
 
 </div>
@@ -207,7 +76,7 @@
      <img src ="images/logo.png" class="img-fluid  logo"> 
    </div>
    <div class="col-xs-12 col-md-4 px-0 ">
-    <p class="text-right mb-0"> aymen@stanford.edu</p>
+    <p class="text-right mb-0"> aymenrizwan93@gmail.com</p>
     <div class="text-right internet ">
       <a href="https://www.linkedin.com/in/aymenr/">
         <i class="fab  pop fa-linkedin fa-2x"></i>
@@ -231,3 +100,4 @@
   <script src ="particles.js-master/particlesconfig.js"> </script>
 </body>
 </html>
+

@@ -1,13 +1,13 @@
 body {
-	font-family: "apercuregular", Sans-Serif;
-	margin-left:10%;
-	margin-right:10%;
+	font-family: "avenir", Sans-Serif;
+	margin-left:20%;
+	margin-right:20%;
 	color:black;
 }
 
 .body-text {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 .border {
 	width: 500px
@@ -19,20 +19,27 @@ body {
 }
 
 p, blockquote,i{
-	font-family: "apercu_monoregular", Mono, Sans-Serif;
+	font-family: "avenir", Sans-Serif;
 }
 h1,h2,h3,h4,h5,h6, .navbar li{
 	font-weight: bold;
-	font-family: apercuregular;
 }
 a {
 	color: black;
 	font-weight: bold;
 
 }
+
+.container a {
+
+	color:white;
+	text-decoration:underline;
+}
+
+
+
 .header-link {
 	text-decoration: underline;
-	font-family: "apercu_monoregular",Mono,Sans-Serif;
 }
 a:hover {
 	text-decoration: none;
@@ -77,7 +84,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 	max-width:250px;
 }
 .tile-title {
-	font-family: "apercuregular",Sans-Serif;
+	font-family: "avenir",Sans-Serif;
 	margin-top: 5px;
 	margin-bottom: 2px;
 
@@ -91,7 +98,7 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover {
 .main-heading {
 	font-size: 1.4em;
 	font-weight: bold;
-	font-family: "apercuregular",Sans-Serif !important ;
+	font-family: "avenir",Sans-Serif !important ;
 }
 
 #resume-link {
@@ -162,7 +169,6 @@ h5,h6 {
 }
 
 li,span {
-	font-family: apercu_monoregular, Mono;
 	margin-bottom: 5px;
 }
 .caption {
@@ -202,12 +208,10 @@ font-weight: bold}
 		color:red;
 	}
 	.span-title {
-		font-family: apercuregular;
 		font-weight: bold;
 		font-size: 1.1em;
 	}
 	.span-subtitle {
-		font-family: apercu_monoregular,Mono;
 		font-size: 1em;
 	}
 
@@ -222,24 +226,20 @@ font-weight: bold}
 }
 .highlight {
 	color:#704a9a ;
-	font-family: apercu_monoregular,Mono;
 	font-weight: bolder;
 }
 
 .highlight-blue {
 	color:#1A5D8A !important ;
-	font-family: apercu_monoregular,Mono;
 	font-weight: bolder;
 }
 .highlight-red {
 	color:red;
-	font-family: apercu_monoregular,Mono;
 	font-weight: bolder;
 }
 
 .highlight-green {
 	color:green !important;
-	font-family: apercu_monoregular,Mono;
 	font-weight: bolder;
 }
 .under-construction {
@@ -291,7 +291,6 @@ th {
 	text-align: center; 
 }
 table,th,td {
-	font-family: apercu_monoregular,Mono;
 
 	padding: 10px;
 
@@ -300,5 +299,4 @@ table,th,td {
 
 .other-projects {
 	text-decoration: underline;
-	font-family: apercu_monoregular,Mono;
 }
