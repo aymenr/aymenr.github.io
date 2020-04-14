@@ -13,6 +13,10 @@ body {
 	width: 500px
 	border:5px solid black;
 }
+.core {
+	margin-left: -25% !important;
+	margin-right: -25% !important;
+}
 
 .border-r {
 	border:2px solid red;
